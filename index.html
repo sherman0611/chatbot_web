@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Uni of Sheffield Chatbot</title>
+        <link rel="stylesheet" href="./css/index.css">
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <header>
+                <label>
+                    <img id="logo_mobile" src="./images/logo.png" alt="University of Sheffield logo">
+                </label>
+
+                <div id="nav_options">
+                    <img id="nav_icon" src="./images/menu.png" alt="menu icon">
+                    <nav id="nav_menu">
+                        <ul>
+                            <li><img id="logo_menu" src="./images/logo.png" alt="University of Sheffield logo"></li>
+                            <li>This is Exaria. A chatbot built to help you fit in with our university.</li>
+                            <li>
+                                <button class="expandable" id="desc">What can Exaria do?</button>
+                                <div id="content_holder">
+                                    <div class="content">
+                                        <p>You can ask questions such as:<br>
+                                            <br>1. Location and opening times of buildings 
+                                            <br>2. Your class or university timetables
+                                            <br>3. Programmes and opportunities
+                                            <br>4. Societies and events
+                                            <br>5. Student visas
+                                            <br>6. Financing
+                                            <br><br>These are just a few things it can answer, feel free to ask other questions!
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>Options</li>
+                            <li><button id="reset_menu" class="options_menu">Restart conversation</button></li>
+                            <li><button id="recent_menu" class="options_menu">To most recent message</button></li>
+                            <li id="menu_footer">Built by Team 1 for COM21002</li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <main>
+                <div id="video_border">
+                    <video id="video" src="videos/standby.webm" autoplay muted loop></video>
+                    <video id="video2" src="videos/hi.webm" muted></video>
+                    <video id="video3" src="videos/response1.webm" muted></video>
+                    <video id="video4" src="videos/response2.webm" muted></video>
+                    <video id="video5" src="videos/response3.webm" muted></video>
+                    <video id="video6" src="videos/wdym.webm" muted></video>
+                </div>
+                <div id="WebChatContainer"></div>
+            </main>
+
+            <div id="menu">
+                <img id="logo_landscape" src="./images/logo.png" alt="University of Sheffield logo">
+                
+                <div class="menu_bg" id="guide">
+                    <h1>What can Exaria do?</h1>
+                    <p>You can ask questions such as:<br>
+                        <br>1. Location and opening times of buildings 
+                        <br>2. Your class or university timetables
+                        <br>3. Programmes and opportunities
+                        <br>4. Societies and events
+                        <br>5. Student visas
+                        <br>6. Financing
+                        <br><br>These are just a few things it can answer, feel free to ask other questions!
+                    </p>
+                </div>
+
+                <div class="menu_bg">
+                    <h1>Options</h1>
+                    <div id="buttons">
+                        <button id="reset" class="options">Restart conversation</button>
+                        <button id="recent" class="options">To most recent message</button>
+                    </div>  
+                </div>
+
+                <footer class="menu_bg">Built by Team 1 for COM21002</footer>
+            </div>
+
+            <script src="./js/chatbot.js"></script>
+        </div>
+    </body>  
+
+</html>
